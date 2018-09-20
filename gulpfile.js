@@ -9,5 +9,6 @@ const sync    = require('./build/browsersync');
 [sass, scripts, images, sync].forEach(task => {
   task(gulp);
 });
+gulp.task( 'default', [ 'serve' ] )
 
 gulp.task('build', ['sass', 'scripts', 'images', 'jekyll-build']);
