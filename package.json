@@ -5,7 +5,9 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp serve",
-    "build": "gulp build"
+    "build": "gulp build",
+    "start": "node app",
+    "postinstall": "gulp default"
   },
   "author": "Brittany Chiang",
   "license": "ISC",
